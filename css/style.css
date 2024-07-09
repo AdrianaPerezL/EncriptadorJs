@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: #F3F5FC;
+    background-color: #F6F7FC;
 }
 
 .container{
@@ -9,7 +9,7 @@ body{
     width: 960px;
     height: 650px;
     padding: 5px;
-    background-color: aliceblue;
+    background-color: #F6F7FC;
     font-family: 'Varela Round', sans-serif;
 }
 
@@ -30,6 +30,7 @@ body{
     border-radius: 24px;
     width: 30%;
     height: auto;
+    background-color: white;
 }
 
 .left-button{
@@ -97,6 +98,7 @@ body{
     outline: none;
     font-size: 15px;
     font-family: 'Varela Round', sans-serif;
+    text-align: center;
 
 }
 
@@ -121,17 +123,19 @@ margin-left: 70px;
 #btn-encriptar:hover{
     color: #516d91;
     background-color: #E5EDF5;
+    border: 2px solid #0A3871;
     
 }
 
 #btn-desencriptar{
     padding: 15px;
+    color: #0A3871;
     width: 30%;
     height: 60%;
     border-radius: 24px;
     margin-left: 10%;
     background: #D8DFE8;
-    border: none;
+    border: 2px solid #0A3871;
     font-family: 'Varela Round', sans-serif;
     font-size: 15px;
     box-shadow: -4px -2px 16px 0px #cccccc, 4px 2px 16px 0px rgba(107, 164, 233, 0.48);
@@ -164,13 +168,64 @@ margin-left: 70px;
     background-color: #E5EDF5;
 }
 
-.piepag{
-    background-color: #0A3871;
-    color: #F3F5FC;
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-    font-family: 'Varela Round', sans-serif;
-    font-size: 20px;
+
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .left, .right, .left-button {
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+
+    .logoimg {
+        padding: 10px;
+        display: block;
+        margin: auto;
+    }
+
+    .h1 {
+        margin-left: 0;
+        text-align: center;
+        display: none;
+    }
+
+    .text-input {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #btn-encriptar, #btn-desencriptar {
+        width: 45%;
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    #btn-encriptar {
+        margin-left: 5%;
+    }
+
+    #btn-desencriptar {
+        margin-left: 0;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #copiar {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 20px;
+    }
+
+    .imgDerecha{
+        display: none;
+    }
 }
